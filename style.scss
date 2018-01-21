@@ -11,3 +11,24 @@ body {
 	max-width: 1200px;
 	margin: 0 auto;
 }
+$basic-color: blue;
+$cols: 12;
+
+$responsive-labels: (
+  'large': 'col-',
+  'medium': 'col-m-',
+  'small': 'col-s-'
+);
+
+@for $i from 1 through $cols {
+  @each $point, $size in $responsive-labels {
+    .#{$size}#{$i} {
+      width: (100% / $cols) * $i;
+    }
+  }
+}
+
+.abc {
+  color: $basic-color;
+  text-align: center;
+}

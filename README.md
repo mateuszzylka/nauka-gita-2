@@ -1,1 +1,1 @@
-# nauka-gita-2
+https://github.com/mateuszzylka/nauka-gita-2.git
